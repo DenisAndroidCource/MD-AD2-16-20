@@ -1,5 +1,8 @@
 package by.it.academy.kotlinexample
 
+import org.omg.CORBA.portable.Delegate
+import kotlin.properties.Delegates
+
 /**
  * 1) модификатор доступа
  * 2) оператор fun
@@ -8,6 +11,11 @@ package by.it.academy.kotlinexample
  * 5) указываеете возвращаемый тип
  */
 class FunExample {
+
+    private val field by lazy { }
+    private var name: String by Delegates.observable("") {
+        _, oldValue, newValue ->
+    }
 
     private fun add(a: Int, b: Int): Int {
         return a + b
@@ -23,7 +31,7 @@ class FunExample {
         var varResult = a + b
         varResult = 2
 
-
+        "asdasdasdas".isEmail()
         var notNullableVariable: Int = 15
 //        notNullableVariable = null
 
