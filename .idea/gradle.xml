@@ -12,6 +12,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/cameraintentexample" />
+            <option value="$PROJECT_DIR$/contentproviderexample" />
+            <option value="$PROJECT_DIR$/contentresolverexample" />
             <option value="$PROJECT_DIR$/layoutexample" />
             <option value="$PROJECT_DIR$/myapplication" />
             <option value="$PROJECT_DIR$/testhomework" />

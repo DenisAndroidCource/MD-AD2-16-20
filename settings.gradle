@@ -1,3 +1,6 @@
+include ':cameraintentexample'
+include ':contentresolverexample'
+include ':contentproviderexample'
 include ':testhomework'
 include ':layoutexample'
 include ':myapplication'
