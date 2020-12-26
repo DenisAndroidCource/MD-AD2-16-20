@@ -12,9 +12,14 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/databaseexample" />
+            <option value="$PROJECT_DIR$/filesexample" />
+            <option value="$PROJECT_DIR$/kotlinexample" />
             <option value="$PROJECT_DIR$/layoutexample" />
             <option value="$PROJECT_DIR$/myapplication" />
+            <option value="$PROJECT_DIR$/preferencesexample" />
             <option value="$PROJECT_DIR$/testhomework" />
+            <option value="$PROJECT_DIR$/viewexample" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -1,9 +1,11 @@
 package by.it.academy.myapplication.activity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -13,6 +15,14 @@ import by.it.academy.myapplication.R;
 
 //public class ActivityExample extends Activity
 public class ActivityExample extends AppCompatActivity {
+
+    private OnClickListener clickListener = (v, srt) -> { };
+    private OnClickListener clickListener1 = (v, srt) -> { };
+    private OnClickListener clickListener3 = (v, srt) -> { };
+
+    public interface OnClickListener {
+        void onClick(View v, String str);
+    }
 
     private int value;
 
@@ -24,16 +34,21 @@ public class ActivityExample extends AppCompatActivity {
         setContentView(R.layout.activity_example);
         Log.d(LOG_KEY, "onCreate");
 
+//        Button button = findViewById(R.id.button);
+//        button.setOnClickListener(clickListener);
+//        button.setOnClickListener(clickListener1);
+//        button.setOnClickListener(clickListener3);
+
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 value = getIntentData();
-//                int data = getIntentData();
-//                int result = 5 * data;
-//                Intent intent = new Intent();
-//                intent.putExtra("RESULT", result);
-//                setResult(Activity.RESULT_OK, intent);
-//                finish();
+                int data = getIntentData();
+                int result = 5 * data;
+                Intent intent = new Intent();
+                intent.putExtra("RESULT", result);
+                setResult(Activity.RESULT_OK, intent);
+                finish();
             }
         });
     }
