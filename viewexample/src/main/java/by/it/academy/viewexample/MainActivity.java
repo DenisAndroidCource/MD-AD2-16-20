@@ -15,6 +15,9 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import by.it.academy.viewexample.adapter.User;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,8 +26,30 @@ public class MainActivity extends AppCompatActivity {
 
     private Button button;
 
+    private Thread thread = new Thread(new Runnable() {
+        @Override
+        public void run() {
+            List<Integer> list = new ArrayList<>();
+            while (Thread.interrupted()){
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                list.add(213);
+            }
+        }
+    });
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        thread.start();
+
+
+
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 

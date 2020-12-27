@@ -3,6 +3,10 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
       <module name="My_Application.app" target="1.8" />
+      <module name="My_Application.asyncexample" target="1.8" />
+      <module name="My_Application.cameraintentexample" target="1.8" />
+      <module name="My_Application.contentproviderexample" target="1.8" />
+      <module name="My_Application.contentresolverexample" target="1.8" />
       <module name="My_Application.databaseexample" target="1.8" />
       <module name="My_Application.filesexample" target="1.8" />
       <module name="My_Application.layoutexample" target="1.8" />
