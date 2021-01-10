@@ -1,3 +1,7 @@
+include ':coroutineapplicationaxemple'
+include ':rxjavaapplicationexample'
+include ':coroutinesexample'
+include ':rxjavaexample'
 include ':asyncexample'
 include ':databaseexample'
 include ':filesexample'
