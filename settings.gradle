@@ -1,3 +1,7 @@
+include ':newsnetworkmvpexample'
+include ':mvpexample'
+include ':retrofitexample'
+include ':okhttpexample'
 include ':fragmentexample'
 include ':coroutineapplicationaxemple'
 include ':rxjavaapplicationexample'
