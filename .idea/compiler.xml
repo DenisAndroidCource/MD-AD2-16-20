@@ -17,6 +17,7 @@
       <module name="My_Application.mvpexample" target="1.8" />
       <module name="My_Application.myapplication" target="1.8" />
       <module name="My_Application.newsnetworkmvpexample" target="1.8" />
+      <module name="My_Application.newsnetworkmvvmexample" target="1.8" />
       <module name="My_Application.okhttpexample" target="1.8" />
       <module name="My_Application.preferencesexample" target="1.8" />
       <module name="My_Application.retrofitexample" target="1.8" />
