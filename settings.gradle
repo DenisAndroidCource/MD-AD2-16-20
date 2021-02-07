@@ -1,3 +1,6 @@
+include ':mapsexample'
+include ':newscleanarchitectureexample'
+include ':solidexample'
 include ':newsnetworkmvvmexample'
 include ':lifecycleownerexample'
 include ':newsnetworkmvpexample'

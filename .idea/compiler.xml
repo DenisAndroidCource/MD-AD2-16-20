@@ -14,8 +14,10 @@
       <module name="My_Application.fragmentexample" target="1.8" />
       <module name="My_Application.layoutexample" target="1.8" />
       <module name="My_Application.lifecycleownerexample" target="1.8" />
+      <module name="My_Application.mapsexample" target="1.8" />
       <module name="My_Application.mvpexample" target="1.8" />
       <module name="My_Application.myapplication" target="1.8" />
+      <module name="My_Application.newscleanarchitectureexample" target="1.8" />
       <module name="My_Application.newsnetworkmvpexample" target="1.8" />
       <module name="My_Application.newsnetworkmvvmexample" target="1.8" />
       <module name="My_Application.okhttpexample" target="1.8" />

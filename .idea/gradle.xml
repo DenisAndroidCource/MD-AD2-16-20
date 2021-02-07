@@ -24,8 +24,10 @@
             <option value="$PROJECT_DIR$/kotlinexample" />
             <option value="$PROJECT_DIR$/layoutexample" />
             <option value="$PROJECT_DIR$/lifecycleownerexample" />
+            <option value="$PROJECT_DIR$/mapsexample" />
             <option value="$PROJECT_DIR$/mvpexample" />
             <option value="$PROJECT_DIR$/myapplication" />
+            <option value="$PROJECT_DIR$/newscleanarchitectureexample" />
             <option value="$PROJECT_DIR$/newsnetworkmvpexample" />
             <option value="$PROJECT_DIR$/newsnetworkmvvmexample" />
             <option value="$PROJECT_DIR$/okhttpexample" />
@@ -33,6 +35,7 @@
             <option value="$PROJECT_DIR$/retrofitexample" />
             <option value="$PROJECT_DIR$/rxjavaapplicationexample" />
             <option value="$PROJECT_DIR$/rxjavaexample" />
+            <option value="$PROJECT_DIR$/solidexample" />
             <option value="$PROJECT_DIR$/testhomework" />
             <option value="$PROJECT_DIR$/viewexample" />
           </set>
