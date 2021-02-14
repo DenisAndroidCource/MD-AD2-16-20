@@ -1,3 +1,7 @@
+include ':serviceexample'
+include ':broadcastreceiverexampleextra'
+include ':broadcastreceiverexample'
+include ':locationexample'
 include ':mapsexample'
 include ':newscleanarchitectureexample'
 include ':solidexample'
