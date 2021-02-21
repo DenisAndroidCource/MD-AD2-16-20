@@ -27,7 +27,11 @@ class SeondActivity : AppCompatActivity(), MainActivityView {
         presenter.close()
     }
 
-    override fun showData(data: String) {
+    fun showData(data: String) {
         textView.text = data
+    }
+
+    override fun showData(data: DataToShow) {
+        TODO("Not yet implemented")
     }
 }

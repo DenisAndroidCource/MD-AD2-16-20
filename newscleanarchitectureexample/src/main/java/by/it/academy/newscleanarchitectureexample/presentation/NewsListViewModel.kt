@@ -1,6 +1,7 @@
 package by.it.academy.newscleanarchitectureexample.presentation
 
 import android.util.Log
+import androidx.annotation.VisibleForTesting
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -9,6 +10,7 @@ import by.it.academy.newscleanarchitectureexample.domain.NewsTopHeadlinesUseCase
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 
+@VisibleForTesting
 class NewsListViewModel(
     private val compositeDisposable: CompositeDisposable,
     private val newsTopHeadlinesUseCase: NewsTopHeadlinesUseCase,

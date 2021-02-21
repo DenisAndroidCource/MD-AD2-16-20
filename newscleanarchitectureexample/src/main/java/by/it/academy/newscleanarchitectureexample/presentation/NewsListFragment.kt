@@ -3,6 +3,7 @@ package by.it.academy.newscleanarchitectureexample.presentation
 import android.content.Context
 import android.os.Bundle
 import android.view.View
+import androidx.annotation.VisibleForTesting
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -20,6 +21,8 @@ class NewsListFragment : Fragment(R.layout.fragment_contact_list) {
     }
     private var snackbar: Snackbar? = null
 
+    @VisibleForTesting(otherwise = VisibleForTesting.PRIVATE)
+    var viewModelFactory: ViewModelProvider.Factory = NewsListViewModelFactory()
     private lateinit var viewModel: NewsListViewModel
 
     override fun onAttach(context: Context) {
@@ -27,6 +30,7 @@ class NewsListFragment : Fragment(R.layout.fragment_contact_list) {
 //        if (context is NewsNavigation) {
 //            newsNavigation = context
 //        }
+
     }
 
     override fun onDetach() {
@@ -41,14 +45,14 @@ class NewsListFragment : Fragment(R.layout.fragment_contact_list) {
             adapter = newsListAdapter
             layoutManager = LinearLayoutManager(context)
         }
+        viewModel = ViewModelProvider(this, viewModelFactory).get(NewsListViewModel::class.java)
+        with(viewModel) {
+            newsLiveData.observe(viewLifecycleOwner, Observer { data -> showNewsList(data) })
+            newsErrorLiveData.observe(viewLifecycleOwner, Observer { err -> showError(err) })
+//            fetchNewsList()
+        }
 
-        viewModel = ViewModelProvider(this, NewsListViewModelFactory())
-            .get(NewsListViewModel::class.java)
-            .also {
-                it.newsLiveData.observe(viewLifecycleOwner, Observer { data -> showNewsList(data) })
-                it.newsErrorLiveData.observe(viewLifecycleOwner, Observer { err -> showError(err) })
-                it.fetchNewsList()
-            }
+        binding.button.setOnClickListener { viewModel.fetchNewsList() }
     }
 
     private fun showNewsList(list: List<NewsItem>) {

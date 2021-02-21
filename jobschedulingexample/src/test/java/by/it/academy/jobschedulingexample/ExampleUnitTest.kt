@@ -1,4 +1,4 @@
-package by.it.academy.newscleanarchitectureexample
+package by.it.academy.jobschedulingexample
 
 import org.junit.Test
 
