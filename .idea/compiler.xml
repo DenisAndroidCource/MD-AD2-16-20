@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
+      <module name="My_Application.animationexample" target="1.8" />
       <module name="My_Application.app" target="1.8" />
       <module name="My_Application.asyncexample" target="1.8" />
       <module name="My_Application.broadcastreceiverexample" target="1.8" />
@@ -12,6 +13,7 @@
       <module name="My_Application.coroutineapplicationaxemple" target="1.8" />
       <module name="My_Application.coroutinesexample" target="1.8" />
       <module name="My_Application.databaseexample" target="1.8" />
+      <module name="My_Application.diexample" target="1.8" />
       <module name="My_Application.filesexample" target="1.8" />
       <module name="My_Application.fragmentexample" target="1.8" />
       <module name="My_Application.gradleexample" target="1.8" />

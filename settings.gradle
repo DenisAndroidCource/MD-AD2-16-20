@@ -1,3 +1,5 @@
+include ':animationexample'
+include ':diexample'
 include ':gradleexample'
 include ':jobschedulingexample'
 include ':serviceexample'

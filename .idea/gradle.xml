@@ -5,12 +5,14 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="testRunner" value="PLATFORM" />
+        <option name="disableWrapperSourceDistributionNotification" value="true" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleJvm" value="1.8 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/animationexample" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/asyncexample" />
             <option value="$PROJECT_DIR$/broadcastreceiverexample" />
@@ -21,6 +23,7 @@
             <option value="$PROJECT_DIR$/coroutineapplicationaxemple" />
             <option value="$PROJECT_DIR$/coroutinesexample" />
             <option value="$PROJECT_DIR$/databaseexample" />
+            <option value="$PROJECT_DIR$/diexample" />
             <option value="$PROJECT_DIR$/filesexample" />
             <option value="$PROJECT_DIR$/fragmentexample" />
             <option value="$PROJECT_DIR$/gradleexample" />
